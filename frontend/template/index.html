@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction System</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reward Bidding Solution</h1>
+
+        <!-- Add Member Form -->
+        <form id="addMemberForm" method="POST" action="http://127.0.0.1:5000/add_member">
+            <h2>Add Member</h2>
+            <label for="memberId">Member ID:</label>
+            <input type="text" id="memberId" name="memberId" required>
+            <label for="memberName">Name:</label>
+            <input type="text" id="memberName" name="memberName" required>
+            <label for="wishCoins">Wish Coins:</label>
+            <input type="text" id="wishCoins" name="wishCoins" required>
+            <button type="submit">Add Member</button>
+        </form>
+
+        <!-- Add Event Form -->
+        <form id="addEventForm">
+            <h2>Add Event</h2>
+            <label for="eventId">Event ID:</label>
+            <input type="text" id="eventId" name="eventId" required>
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName" required>
+            <label for="prizeName">Prize Name:</label>
+            <input type="text" id="prizeName" name="prizeName" required>
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+            <button type="submit">Add Event</button>
+        </form>
+
+        <!-- Register Member Form -->
+        <form id="registerMemberForm">
+            <h2>Register Member for Event</h2>
+            <label for="registerMemberId">Member ID:</label>
+            <input type="text" id="registerMemberId" name="registerMemberId" required>
+            <label for="registerEventId">Event ID:</label>
+            <input type="text" id="registerEventId" name="registerEventId" required>
+            <button type="submit">Register Member</button>
+        </form>
+
+        <!-- Submit Bid Form -->
+        <form id="submitBidForm">
+            <h2>Submit Bid</h2>
+            <label for="submitBidMemberId">Member ID:</label>
+            <input type="text" id="submitBidMemberId" name="submitBidMemberId" required>
+            <label for="submitBidEventId">Event ID:</label>
+            <input type="text" id="submitBidEventId" name="submitBidEventId" required>
+            <label for="bid1">Bid 1:</label>
+            <input type="text" id="bid1" name="bid1" required>
+            <label for="bid2">Bid 2:</label>
+            <input type="text" id="bid2" name="bid2" required>
+            <label for="bid3">Bid 3:</label>
+            <input type="text" id="bid3" name="bid3" required>
+            <label for="bid4">Bid 4:</label>
+            <input type="text" id="bid4" name="bid4" required>
+            <label for="bid5">Bid 5:</label>
+            <input type="text" id="bid5" name="bid5" required>
+            <button type="submit">Submit Bid</button>
+        </form>
+
+        <!-- Declare Winner Form -->
+        <form id="declareWinnerForm">
+            <h2>Declare Winner</h2>
+            <label for="declareWinnerEventId">Event ID:</label>
+            <input type="text" id="declareWinnerEventId" name="declareWinnerEventId" required>
+            <button type="submit">Declare Winner</button>
+        </form>
+    </div>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
